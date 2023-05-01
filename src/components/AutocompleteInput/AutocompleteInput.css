@@ -1,0 +1,106 @@
+.autocomplete {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.autocomplete input {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #202124;
+  background-color: #f1f3f4;
+  outline: none;
+}
+
+.autocomplete input:focus {
+  border-color: #4285f4;
+  box-shadow: 0 0 0 1px #4285f4;
+}
+
+.autocomplete ul {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #dfe1e5;
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.autocomplete li {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #202124;
+  cursor: pointer;
+  width: 100%;
+}
+
+.autocomplete li:hover {
+  background-color: #f1f3f4;
+}
+
+.autocomplete li.selected {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.autocomplete li.searched {
+  color: purple;
+  display: flex;
+  justify-content: space-between;
+}
+
+.autocomplete .title {
+  flex: 1;
+}
+
+.autocomplete .remove {
+  color: gray;
+  flex: 0;
+}
+
+.autocomplete .remove:hover {
+  color: #4285f4;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gray-text {
+  color: gray;
+}
+
+.result ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+}
+
+.result li {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.result .title {
+  color: #2a71e2;
+}
